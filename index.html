@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    <title>Canvas project of version control</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+  
+    <link rel="stylesheet"  href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="paint ur thoughts">
+  <meta name="keywords" content="paint,drawing,color,frames,paint brush,">
+  <meta name ="robots" content="index,follow">
+  <link rel="canonical" href="">
+  <meta http-equiv="Content-Language" content="en">
+  <meta property="og:title" content="paint ur thoughts">
+    <meta property="og:description" content="easy to draw,coloring, user can add images to canvas,borderstyles applicable ">
+    <meta property="og:image" content="./images/paint.jpg">
+   
+
+       
+ </head>
+  <body class="background">
+        <div>
+          <nav class="navbar navbar-expand-lg bg-info-subtle">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./images/icons8-canvas-64.png" style="height: 55px;width: 55px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <h1 class="paint">Paint ur thoughts</h1>
+                <ul class="navbar-nav items ms-auto">
+                  <li class="nav-item">
+                    <a href="#0">
+                      <span>About</span>
+                      <i class="fas fa-address-card" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#0">
+                      <span>Projects</span>
+                      <i class="fas fa-tasks" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#0">
+                      <span>Clients</span>
+                      <i class="fas fa-users" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#0">
+                      <span>Contact</span>
+                      <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="signUp.html"><button class="btn btn-outline-light btn-rounded" id="gk" style="color: white;font-size: 15px;font-weight: bold;background-color: darkgreen;">Sign up!</button></a>
+                  </li>
+
+                </ul>
+              </div>
+              <div> 
+                <a href="login.html"><button id="gk" type="button" class="btn btn-primary" style="color: white;font-size: 15px;font-weight: bold;background-color: rgb(32, 78, 226);margin-right: 15px;">Login</button></a>
+              </div>
+              
+            </div>
+          </nav>
+        </div>
+         <!-- Header -->
+         <!-- Middle content -->
+         <!-- <h3 class="main-heading">Canvas Project </h3>-->
+        <div class="content">
+           <div class="left"> 
+              <!-- brush team  -->
+              <div id="container">
+               <label><h2 class="tools1"><b>Tools</b></h2></label><br>
+               <label for="check1" id=""> <img src="./images/brush.png" alt="brush" id="brush" class="brush1" > <input type="radio" name ='b1' id = 'check1' onchange="function1()">
+               </input></label>
+      
+               <label for="check2" id=""> <img src="./images/pen.png" alt="pen" id="pen" class="pen1" > <input type="radio" name ='b1' id = 'check2' onchange="function2()">
+               </input></label><br>
+      
+               <label for="check3" id=""> <img src="./images/eraser.png" alt="eraser" id="eraser" class="eraser1" > <input type="radio" name ='b1' id = 'check3' onchange="function3()">
+               </input></label>
+               <input type="range" id="text1" onchange="function5()">
+               <div class="controls">
+                   <div class="colour" ></div>
+                   <label for="colorPicker"><h4>Color Picker:</h4></label>
+                   <input  type="color" id="colorPicker" ></div>
+                   <div class="BG">
+                  <label for="backgroundColorPicker"><h4>BG   colours:</h4></label>
+                   <input  type="color" id="backgroundColorPicker"  value="#FFFFFF">
+               </div>
+               <div class="color1"><button class="circle-button" onclick="clearCanvas()">Clear</button>
+                  <button class="circle-button" onclick="generateRandomGradient()" id="randomGradientButton">LG</button></div> 
+              
+              <!-- brush team  end --> 
+
+              <!-- left side 2  --> 
+              <!-- Start from frames team -->
+              
+                  <h4 class="heading2">Select default Frame styles</h4>
+                  <br>
+                  <div class="row">
+                      <div class="box green" onclick="greenevent()">
+                      </div>
+                      <div class="box blue" onclick="blueevent()">
+                      </div>
+                      <div class="box red" onclick="redevent()">
+                      </div>
+                      <div class="box yellow" onclick="yellowevent()"></div>
+                      <div class="box pink" onclick="pinkevent()"></div>
+                  </div>
+              <label for="favcolor"><h4>Select color</h4> </label>
+              <input type="color" id="favcolor" name="favcolor" onchange="changeColor()"><br>
+              <label for="border-style"><h4>Borderstyle:</h4> </label>
+              <select id="border-style" onchange="changeBorderStyle()">
+                  <option value="solid">Solid</option>
+                  <option value="dotted">Dotted</option>
+                  <option value="dashed">Dashed</option>
+                  <option value="double">Double</option>
+                  <option value="groove">Groove</option>
+                  <option value="ridge">ridge</option>
+                  <option value="inset">inset</option>
+                  <option value="outset">outset</option>
+                  <option value="hidden">hidden</option>
+              </select>
+              <br>
+                  <label for="border-width"><h4>Border width: </h4></label>
+                  <button onclick="decrease()"><h2>-</h2></button><b id="pixel" class="btnText">0</b><button onclick="increase()"><h2>+</h2></button>
+                  <br>
+                  <label for="border-width"><h4>Border radius: </h4></label>
+                  <button onclick="decreaseRadius()"><h2>-</h2></button><b id="pixelRadius" class="btnText">0</b><button onclick="increaseRadius()"><h2>+</h2></button>
+                </div>  
+              <!-- End from frames team -->
+            </div> 
+              <!-- brush team  -->
+              <!-- left side 2  --> 
+        <!-- left side -->  
+             <div>
+                 <!-- middle canvas -->
+                 <div class="canvas-container" style="margin: 15px; box-sizing: border-box;">
+                  <canvas id="canvas" width="1020" height="600"  style="box-sizing: border-box;" class="brushcontainer"></canvas>
+                </div>
+             </div>
+             
+             <div class="right">
+              <!-- right side -->
+              
+              <div class="img1">
+                <input  type="file" id="imageupload"  accept="image/*" style ="font-size: 16px;width: 200px;">
+                <div class="image-carousel">
+                    <img   src="./images/t1.jpg"  alt="Background 1"  class="carousel-image">
+                    <img   src="./images/t2.jpg" alt="Background 2" class="carousel-image">
+                </div>
+                <div class="image-carousel">
+                    <img  src="./images/t3.jpg" alt="Background 3" class="carousel-image">
+                    <img  src="./images/t4.jpg" alt="Background 3" class="carousel-image">
+                </div>
+                <div class="image-carousel">
+                    <img   src="./images/t5.png" alt="Background 3" class="carousel-image">
+                    <img  src="./images/t6.jpg" alt="Background 3" class="carousel-image">
+                </div>
+                <div class="image-carousel">
+                    <img src="./images/t7.jpg" alt="Background 3" class="carousel-image">
+                    <img src="./images/t8.jpg" alt="Background 3" class="carousel-image">
+                </div>
+                  <input type="text" id="textinput" placeholder="Enter text" style="font-size: 16px; width: 150px; margin-left: 2px; color: black; font-weight: bold;" onchange="showvalue()">
+                  <button id="writebutton">Write</button><br>
+                  <button id="savebutton" style="font-size: 20px;margin-left: 3px;color: black;background-color: white;font-weight: bold;">Save Image</button>
+            </div>
+             </div>
+        </div>
+
+        <!-- bot code  -->
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+          intent="WELCOME"
+          chat-title="chatbot"
+          agent-id="13747049-b998-4138-9b6b-fa8e7be71c8c"
+          language-code="en"
+        ></df-messenger>
+
+        <!--bot code -->
+
+        <div class="footer">
+          <!-- Footer --> 
+           <!-- Footer -->
+      <footer class="text-center text-white" style="background-color: #0a4275;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+          
+          <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+     
+          
+        <div class="p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="https://github.com/pradeepmanchu">Paint_Your_Thoughts.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+        </div>
+
+        <script src="main.js"></script>
+  </body>
+</html>
+ 
